@@ -36,11 +36,12 @@ Create a virtual environment (optional but recommended):
    ```bash
    streamlit run app.py
 
-## Run as User
+**Run as User:**
 ```bash
-   https://aiinterntask-e6snb46en4ztjmrhwgngnw.streamlit.app/
-## Usage
+https://aiinterntask-e6snb46en4ztjmrhwgngnw.streamlit.app
 
+```
+## Usage
 **Upload an Image:**
 
 ### Use the web interface to upload an image (in formats such as .jpg, .jpeg, or .png).**
