@@ -3,7 +3,9 @@
 
 This project provides a comprehensive pipeline for image segmentation, object extraction, identification, and attribute summarization using advanced machine learning techniques. The workflow involves uploading an image, segmenting it, extracting objects, identifying those objects with a YOLOv5 model, and summarizing the attributes of the identified objects.
 
+
 ## Table of Contents
+### Run as dev
 
 - ### installation
 - ### usage
@@ -33,7 +35,10 @@ Create a virtual environment (optional but recommended):
 6. **Run streamlit file:**
    ```bash
    streamlit run app.py
-    
+
+## Run as User
+```bash
+   https://aiinterntask-e6snb46en4ztjmrhwgngnw.streamlit.app/
 ## Usage
 
 **Upload an Image:**
