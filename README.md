@@ -37,7 +37,7 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     
 ## Usage
 
-**Upload an Image:**
+![**Upload an Image:**](assets/Screenshot (164).png)
 
 ### Use the web interface to upload an image (in formats such as .jpg, .jpeg, or .png).**
 
