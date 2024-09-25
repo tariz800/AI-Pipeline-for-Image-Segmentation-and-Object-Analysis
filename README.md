@@ -1,5 +1,4 @@
-markdown
-Copy code
+
 # Image Segmentation and Object Identification Pipeline
 
 This project provides a comprehensive pipeline for image segmentation, object extraction, identification, and attribute summarization using advanced machine learning techniques. The workflow involves uploading an image, segmenting it, extracting objects, identifying those objects with a YOLOv5 model, and summarizing the attributes of the identified objects.
