@@ -63,12 +63,4 @@ class ObjectExtractor:
             return object_data
         return None
 
-# Example usage:
-# extractor = ObjectExtractor()
-# master_id, extracted_objects = extractor.extract_objects(image, masks, boxes, labels)
-# for obj in extracted_objects:
-#     print(f"Extracted object: {obj['id']}, from master image: {obj['master_id']}")
-#
-# # Retrieve an object
-# retrieved_object = extractor.get_object_by_id(extracted_objects[0]['id'])
-# print(f"Retrieved object: {retrieved_object}")
+
