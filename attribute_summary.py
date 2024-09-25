@@ -79,9 +79,4 @@ class AttributeSummarizer:
             json.dump(summary, f, indent=4)
         print(f"Summarized attributes saved to {output_file}.")
 
-# Example usage
-if __name__ == "__main__":
-    summarizer = AttributeSummarizer()
-    summarizer.load_data()
-    summarized_attributes = summarizer.summarize_attributes()
-    summarizer.save_summary(summarized_attributes)
+
