@@ -28,9 +28,10 @@ Create a virtual environment (optional but recommended):
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 4. **Install required dependencies: Make sure you have pip installed. You can then run:**
+   ```bash
    pip install -r requirements.txt
 
-5. **Run streamlit file:**
+6. **Run streamlit file:**
    ```bash
    streamlit run app.py
     
