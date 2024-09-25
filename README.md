@@ -6,11 +6,11 @@ This project provides a comprehensive pipeline for image segmentation, object ex
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [How to Run the Application](#how-to-run-the-application)
-- [Contributing](#contributing)
-- [License](#license)
+- ### installation
+- ### usage
+- ### how-to-run-the-application
+- ### contributing
+- ### license
 
 ## Installation
 
@@ -37,25 +37,35 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     
 ## Usage
 
-![**Upload an Image:**](assets/Screenshot (164).png)
+**Upload an Image:**
 
 ### Use the web interface to upload an image (in formats such as .jpg, .jpeg, or .png).**
+
+![](https://github.com/tariz800/AI-Pipeline-for-Image-Segmentation-and-Object-Analysis/blob/main/assets/Screenshot%20(164).png)
 
 **Image Segmentation:**
 The application will automatically segment the uploaded image.
 
+![](https://github.com/tariz800/AI-Pipeline-for-Image-Segmentation-and-Object-Analysis/blob/main/assets/Screenshot%20(165).png)
+
 **Object Extraction:**
 Extracted objects will be displayed and saved in your local directory along with their IDs.
 
-**Text Extraction:**
-This will extract the text display and also saved the extracted text into your local directory in json format.
+![](https://github.com/tariz800/AI-Pipeline-for-Image-Segmentation-and-Object-Analysis/blob/main/assets/Screenshot%20(166).png)
 
 
 **Object Identification:**
 Each extracted object will be identified using the YOLOv5 model, with labels and confidence scores displayed. and its metadata will be stored in your local directory.
+
+![](https://github.com/tariz800/AI-Pipeline-for-Image-Segmentation-and-Object-Analysis/blob/main/assets/Screenshot%20(167).png)
+
+**Text Extraction:**
+This will extract the text display and also saved the extracted text into your local directory in json format.
 
 **Attribute Summarization:**
 The application summarizes the attributes of identified objects, which can be viewed on the UI.
 
 **Final Output:**
 A final output image with annotations and a data table will be generated and displayed.
+
+![](https://github.com/tariz800/AI-Pipeline-for-Image-Segmentation-and-Object-Analysis/blob/main/assets/Screenshot%20(169).png)
