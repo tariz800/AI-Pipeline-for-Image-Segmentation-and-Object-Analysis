@@ -23,16 +23,22 @@ To set up the project, follow these steps:
 Create a virtual environment (optional but recommended):
 
 2. **Create a virtual environment (optional but recommended):**
+   ```bash
    python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
-3. **Install required dependencies: Make sure you have pip installed. You can then run:**
+4. **Install required dependencies: Make sure you have pip installed. You can then run:**
    pip install -r requirements.txt
 
-##Usage
+5. **Run streamlit file:**
+   ```bash
+   streamlit run app.py
+    
+## Usage
+
 **Upload an Image:**
 
-###Use the web interface to upload an image (in formats such as .jpg, .jpeg, or .png).**
+### Use the web interface to upload an image (in formats such as .jpg, .jpeg, or .png).**
 
 **Image Segmentation:**
 The application will automatically segment the uploaded image.
