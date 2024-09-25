@@ -68,8 +68,4 @@ class DataMapper:
             json.dump(mapped_data, f, indent=4)
         print(f"Mapped data saved to {output_file}.")
 
-# Example usage
-if __name__ == "__main__":
-    data_mapper = DataMapper()
-    data_mapper.load_data()
-    data_mapper.save_mapped_data('mapped_data.json')
+
