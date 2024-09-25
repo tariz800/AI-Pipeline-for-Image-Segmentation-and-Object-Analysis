@@ -101,12 +101,3 @@ class OutputGenerator:
         combined_image.save(final_output_file)
         print(f"Final output saved as {final_output_file}.")
 
-# Example usage
-if __name__ == "__main__":
-    # Path to the original image
-    original_image_path = "E:/Project/warsoft_task/Aviation-careers.jpg"
-
-    # Initialize and run the output generator
-    output_generator = OutputGenerator(original_image_path)
-    output_generator.load_mapped_data()
-    output_generator.generate_final_output('final_output_with_table.png')
