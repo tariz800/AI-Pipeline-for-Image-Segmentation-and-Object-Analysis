@@ -80,7 +80,7 @@ def main():
         st.write(f"Identified objects have been saved to {identified_objects_file}.")
 
         # Display identified objects with confidence > 0.7
-        filtered_objects = [obj for obj in identified_objects if max(obj['confidences']) > 0.7]
+        filtered_objects = [obj for obj in identified_objects if max(obj['confidences']) > 0.5]
         if filtered_objects:
             for obj in filtered_objects:
                 st.write(f"**Object ID**: {obj['id']}")
@@ -88,7 +88,7 @@ def main():
                 st.write(f"**Confidence Scores**: {', '.join([str(c) for c in obj['confidences']])}")
                 st.image(obj['file_path'], caption=f"Object ID: {obj['id']} with Labels: {', '.join(obj['labels'])}")
         else:
-            st.write("No identified objects with confidence greater than 0.7.")
+            st.write("No other identified objects with confidence greater than 0.5.")
 
         # Step 5: Extract text from the identified objects
         st.header("Step 5: Extract Text from Objects")
