@@ -5,16 +5,35 @@ import matplotlib.patches as patches
 import matplotlib.font_manager as font_manager
 from PIL import Image
 
+import os
+import json
+import streamlit as st
+
 class OutputGenerator:
-    def __init__(self, original_image_path, mapped_data_file='mapped_data.json', output_image_file='final_output.png'):
+    def __init__(self, original_image_path, mapped_data_file=None, output_image_file='final_output.png'):
         self.original_image_path = original_image_path
-        self.mapped_data_file = mapped_data_file
         self.output_image_file = output_image_file
 
+        # If no mapped data file is provided, default to output/data_mapping/mapped_data.json
+        if mapped_data_file is None:
+            self.mapped_data_file = os.path.join('output', 'data_mapping', 'mapped_data.json')
+        else:
+            self.mapped_data_file = mapped_data_file
+
     def load_mapped_data(self):
+        # Check if the mapped data file exists
+        if not os.path.exists(self.mapped_data_file):
+            st.error(f"Mapped data file not found at {self.mapped_data_file}")
+            return
+
         # Load the mapped data from the JSON file
-        with open(self.mapped_data_file, 'r') as f:
-            self.mapped_data = json.load(f)
+        try:
+            with open(self.mapped_data_file, 'r') as f:
+                self.mapped_data = json.load(f)
+            st.success(f"Mapped data loaded successfully from {self.mapped_data_file}")
+        except Exception as e:
+            st.error(f"Error loading mapped data: {e}")
+
 
     def annotate_image(self):
         # Open the original image
